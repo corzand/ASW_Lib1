@@ -14,5 +14,13 @@ import asw1009.models.User;
  * @author Andrea
  */
 public class LoginResponseViewModel extends BaseResponseViewModel {
-    public User loggedUser;
+    private User loggedUser;
+    
+    public User getLoggedUser(){
+        return this.loggedUser;
+    }
+    
+    public void setLoggedUser(User loggedUser){
+        this.loggedUser = loggedUser;
+    }
 }
