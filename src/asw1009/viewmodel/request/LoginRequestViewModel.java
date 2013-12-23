@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package asw1009.models.request;
+package asw1009.viewmodel.request;
 
 /**
  *

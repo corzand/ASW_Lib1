@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package asw1009.models.response;
+package asw1009.viewmodel.response;
 
-import asw1009.models.User;
+import asw1009.model.entities.User;
 
 
 /**
