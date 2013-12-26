@@ -21,6 +21,16 @@ public class User {
     private String email;
     private String picture;
     
+    public User(){
+        this.id = 0;
+        this.firstName = "";   
+        this.lastName = "";
+        this.username ="";
+        this.password ="";
+        this.email="";
+        this.picture="";
+    }
+    
     public int getId(){
         return this.id;
     }
