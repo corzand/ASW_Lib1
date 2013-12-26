@@ -14,7 +14,7 @@ public class BaseResponseViewModel {
     private boolean error;
     private String errorMessage;
     
-    public boolean isError(){
+    public boolean hasError(){
         return this.error;
     }
     
