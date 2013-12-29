@@ -6,8 +6,6 @@
 
 package asw1009.model.entities;
 
-import java.util.Date;
-
 
 /**
  *
