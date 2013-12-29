@@ -11,33 +11,22 @@ package asw1009.model.entities;
  *
  * @author Andrea
  */
-public class User {
+public class User extends UserBase {
     
-    private int id;
+    
     private String firstName;
     private String lastName;
-    private String username;
     private String password;
     private String email;
-    private String picture;
     
     public User(){
-        this.id = 0;
+        super();
         this.firstName = "";   
         this.lastName = "";
-        this.username ="";
         this.password ="";
         this.email="";
-        this.picture="";
     }
     
-    public int getId(){
-        return this.id;
-    }
-    
-    public void setId(int id){
-        this.id = id;
-    }
     
     public String getFirstName(){
         return this.firstName;
@@ -63,13 +52,6 @@ public class User {
         this.lastName = lastName;
     }
     
-    public String getUsername(){
-        return this.username;
-    }
-    
-    public void setUsername(String username){
-        this.username = username;
-    }
     
     public String getEmail(){
         return this.email;
@@ -79,12 +61,5 @@ public class User {
         this.email = email;
     }
     
-    public String getPicture(){
-        return this.picture;
-    }
-    
-    public void setPicture(String picture){
-        this.picture = picture;
-    }
     
 }
