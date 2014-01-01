@@ -18,8 +18,8 @@ public class SearchTasksRequestViewModel {
     private Date startDate;
     private Date endDate;
     private int userId;
-    private List<Category> categories;
-    private boolean personal;
+//    private List<Category> categories;
+//    private boolean personal;
     
     public Date getStartDate(){
         return this.startDate;
@@ -45,20 +45,20 @@ public class SearchTasksRequestViewModel {
         this.userId = userId;
     }
     
-    public List<Category> getCategories(){
-        return this.categories;
-    }
-    
-    public void setCategory(List<Category> categories){
-        this.categories = categories;
-    }    
-    
-    public boolean getPersonal(){
-        return this.personal;
-    }
-    
-    public void setPersonal(boolean personal){
-        this.personal = personal;
-    }
+//    public List<Category> getCategories(){
+//        return this.categories;
+//    }
+//    
+//    public void setCategory(List<Category> categories){
+//        this.categories = categories;
+//    }    
+//    
+//    public boolean getPersonal(){
+//        return this.personal;
+//    }
+//    
+//    public void setPersonal(boolean personal){
+//        this.personal = personal;
+//    }
     
 }
