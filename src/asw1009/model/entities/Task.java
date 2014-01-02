@@ -27,6 +27,7 @@ public class Task {
     private boolean personal;
     private int assignedUserId;
     private String attachment;
+	private long timeStamp;
     
     public Task(){
         this.id = 0;
@@ -136,5 +137,13 @@ public class Task {
     
     public void setPersonal(boolean personal){
         this.personal = personal;
+    }    
+	
+	 public long getTimeStamp(){
+        return this.timeStamp;
+    }
+    
+    public void setTimeStamp(long timeStamp){
+        this.timeStamp = timeStamp;
     }    
 }

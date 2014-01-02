@@ -25,6 +25,7 @@ public class EditTaskRequestViewModel {
 	private boolean personal;
 	private int assignedUserId;
 	private String attachment;
+	private long timeStamp;
 
 	public int getId() {
 		return this.id;
@@ -121,4 +122,12 @@ public class EditTaskRequestViewModel {
 	public void setPersonal(boolean personal) {
 		this.personal = personal;
 	}
+	
+	public long getTimeStamp(){
+        return this.timeStamp;
+    }
+    
+    public void setTimeStamp(long timeStamp){
+        this.timeStamp = timeStamp;
+    } 
 }
