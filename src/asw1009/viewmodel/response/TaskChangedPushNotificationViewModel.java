@@ -13,11 +13,12 @@ import asw1009.model.entities.Task;
  * @author Andrea
  */
 public class TaskChangedPushNotificationViewModel {
-    private boolean isNew;
+    int operation;
     private Task task;
     
-    public TaskChangedPushNotificationViewModel(boolean isNew, Task task){
-        this.isNew = isNew;
+    public TaskChangedPushNotificationViewModel(int operation, Task task){
+        this.operation = operation;
         this.task = task;
     }
+    
 }
