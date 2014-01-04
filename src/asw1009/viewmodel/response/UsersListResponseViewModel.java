@@ -6,11 +6,6 @@ import asw1009.model.entities.UserBase;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- *
- * @author Andrea
- */
 public class UsersListResponseViewModel extends BaseResponseViewModel {
     private List<UserBase> users;
     
