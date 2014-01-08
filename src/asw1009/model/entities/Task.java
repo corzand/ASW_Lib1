@@ -9,7 +9,7 @@ public class Task {
     private int id;
     private String title;
     private String description;
-    private Date date;
+    private long date;
     private boolean done;
     private int userId;
     private int categoryId;
@@ -24,7 +24,7 @@ public class Task {
         this.id = 0;
         this.title = "";   
         this.description = "";
-        this.date = new Date();
+        this.date = new Date().getTime();
         this.done = false;
         this.userId = -1;
         this.categoryId = -1;
@@ -59,10 +59,10 @@ public class Task {
     }
     
     public Date getDate(){
-        return this.date;
+        return new Date(this.date);
     }
     
-    public void setDate(Date date){
+    public void setDate(Long date){
         this.date = date;
     }
     
