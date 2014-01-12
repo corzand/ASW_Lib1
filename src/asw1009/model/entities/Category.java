@@ -1,50 +1,96 @@
-
 package asw1009.model.entities;
 
-
+/**
+ * Entità rappresentante una categoria alla quale può essere associato un task.
+ *
+ * @author ASW1009
+ */
 public class Category {
-    
+
     private int id;
     private String title;
     private boolean state;
     private String color;
-    
-    public Category(){
+
+    /**
+     * Costruttore di classe
+     */
+    public Category() {
         this.id = 0;
-        this.title = "";   
+        this.title = "";
         this.state = true;
         this.color = "";
     }
-    
-    public int getId(){
+
+    /**
+     * Restituisce l'identificativo progressivo della categoria.
+     *
+     * @return Identificativo della categoria.
+     */
+    public int getId() {
         return this.id;
     }
-    
-    public void setId(int id){
+
+    /**
+     * Imposta l'identificativo della categoria.
+     *
+     * @param id Intero rappresentante l'identificativo della categoria.
+     */
+    public void setId(int id) {
         this.id = id;
     }
-    
-    public String getTitle(){
+
+    /**
+     * Restituisce il titolo della categoria.
+     *
+     * @return Titolo della categoria.
+     */
+    public String getTitle() {
         return this.title;
     }
-    
-    public void setTitle(String title){
+
+    /**
+     * Imposta il titolo della categoria.
+     *
+     * @param title Stringa rappresentante il titolo della categoria.
+     */
+    public void setTitle(String title) {
         this.title = title;
     }
-    
-    public String getColor(){
+
+    /**
+     * Restituisce il colore associato della categoria.
+     *
+     * @return Colore della categoria.
+     */
+    public String getColor() {
         return this.color;
     }
-    
-    public void setColor(String color){
+
+    /**
+     * Imposta il colore della categoria.
+     *
+     * @param color Stringa rappresentante il colore della categoria.
+     */
+    public void setColor(String color) {
         this.color = color;
     }
-    
-    public boolean getState(){
+
+    /**
+     * Restituisce lo stato alla categoria.
+     *
+     * @return Stato booleano della categoria.
+     */
+    public boolean getState() {
         return this.state;
     }
-    
-    public void setState(boolean state){
+
+    /**
+     * Imposta lo stato della categoria.
+     *
+     * @param state Booleano rappresentante lo stato della categoria.
+     */
+    public void setState(boolean state) {
         this.state = state;
-    }    
+    }
 }
