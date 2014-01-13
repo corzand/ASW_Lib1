@@ -9,6 +9,7 @@ public class LoginRequestViewModel {
 
     private String username;
     private String password;
+    private String remember;
 
     /**
      * Restituisce lo username dell'utente che richiede l'accesso.
