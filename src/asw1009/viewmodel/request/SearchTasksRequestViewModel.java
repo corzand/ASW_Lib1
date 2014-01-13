@@ -1,55 +1,70 @@
 package asw1009.viewmodel.request;
 
-import asw1009.model.entities.Category;
 import java.util.Date;
-import java.util.List;
 
-
+/**
+ * View Model di richiesta di ricerca Task.
+ *
+ * @author ASW1009
+ */
 public class SearchTasksRequestViewModel {
+
     private Date startDate;
     private Date endDate;
     private int userId;
-//    private List<Category> categories;
-//    private boolean personal;
-    
-    public Date getStartDate(){
+
+    /**
+     * Restituisce la data di inizio ricerca del task.
+     *
+     * @return Date rappresentante la data di inizio ricerca.
+     */
+    public Date getStartDate() {
         return this.startDate;
     }
-    
-    public void setStartDate(Date startDate){
+
+    /**
+     * Imposta la data di inizio ricerca del task.
+     *
+     * @param startDate Date rappresentante la data di inizio ricerca.
+     */
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
-    
-    public Date getEndDate(){
+
+    /**
+     * Restituisce la data di fine ricerca del task.
+     *
+     * @return Date rappresentante la data di fine ricerca.
+     */
+    public Date getEndDate() {
         return this.endDate;
     }
-    
-    public void setEndDate(Date endDate){
+
+    /**
+     * Imposta la data di fine ricerca del task.
+     *
+     * @param endDate Date rappresentante la data di fine ricerca.
+     */
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
-    
-    public int getUserId(){
+
+    /**
+     * Restituisce l'id dell'utente che richiede la ricerca.
+     *
+     * @return Intero rappresentante l'id dell'utente che esegue la ricerca.
+     */
+    public int getUserId() {
         return this.userId;
     }
-    
-    public void setUserId(int userId){
+
+    /**
+     * Imposta l'id dell'utente che richiede la ricerca.
+     *
+     * @param userId Intero rappresentante l'id dell'utente che esegue la ricerca.
+     */
+    public void setUserId(int userId) {
         this.userId = userId;
     }
-    
-//    public List<Category> getCategories(){
-//        return this.categories;
-//    }
-//    
-//    public void setCategory(List<Category> categories){
-//        this.categories = categories;
-//    }    
-//    
-//    public boolean getPersonal(){
-//        return this.personal;
-//    }
-//    
-//    public void setPersonal(boolean personal){
-//        this.personal = personal;
-//    }
-    
+
 }
