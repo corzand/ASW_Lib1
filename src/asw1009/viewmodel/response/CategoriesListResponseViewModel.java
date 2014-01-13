@@ -1,17 +1,31 @@
 package asw1009.viewmodel.response;
 
 import asw1009.model.entities.Category;
-import asw1009.model.entities.User;
 import java.util.List;
 
+/**
+ * View Model di risposta elenco categorie.
+ *
+ * @author ASW1009
+ */
 public class CategoriesListResponseViewModel extends BaseResponseViewModel {
+
     private List<Category> categories;
-    
-    public void setCategories(List<Category> categories){
-        this.categories = categories;
-    }
-    
-    public List<Category> getCategories(){
+
+    /**
+     * Restituisce l'elenco delle categorie presenti.
+     * @return Lista di tipo entità Category contenenente le liste presenti.
+     */
+    public List<Category> getCategories() {
         return this.categories;
     }
+
+    /**
+     * Imposta l'elenco delle categorie presenti.
+     * @param categories Lista contenente le categorie presenti.
+     */
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
 }
