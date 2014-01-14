@@ -1,13 +1,13 @@
-package asw1009.viewmodel.request;
+package asw1009.requests;
 
 import java.util.Date;
 
 /**
- * View Model di richiesta di aggiunta Task.
+ * Richiesta di aggiunta Task.
  *
  * @author ASW1009
  */
-public class AddTaskRequestViewModel {
+public class AddTaskRequest {
 
     private String title;
     private String description;

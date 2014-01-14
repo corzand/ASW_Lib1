@@ -1,12 +1,12 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.User;
 /**
- * View Model di risposta di Login Utente.
+ * Risposta del servizio di Login.
  *
  * @author ASW1009
  */
-public class LoginResponseViewModel extends BaseResponseViewModel {
+public class LoginResponse extends BaseResponse {
     private User loggedUser;
     /**
      * Restituisce l'oggetto User loggato.

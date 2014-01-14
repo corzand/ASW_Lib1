@@ -1,12 +1,12 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.Task;
 /**
- * View Model di risposta di aggiunta Task.
+ * Risposta del servizio di aggiunta Task.
  *
  * @author ASW1009
  */
-public class AddTaskResponseViewModel extends BaseResponseViewModel {
+public class AddTaskResponse extends BaseResponse {
     private Task task;
     
     /**

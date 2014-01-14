@@ -1,13 +1,13 @@
-package asw1009.viewmodel.request;
+package asw1009.requests;
 
 import java.util.Date;
 
 /**
- * View Model di richiesta di modifica Task.
+ * Richiesta di modifica Task.
  *
  * @author ASW1009
  */
-public class EditTaskRequestViewModel {
+public class EditTaskRequest {
 
     private int id;
     private String title;

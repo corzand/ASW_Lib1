@@ -1,10 +1,10 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 /**
- * View Model di risposta base.
+ * Classe base, contiene informazioni comuni ad ogni Response
  *
  * @author ASW1009
  */
-public class BaseResponseViewModel {
+public class BaseResponse {
     private boolean error;
     private String errorMessage;
     

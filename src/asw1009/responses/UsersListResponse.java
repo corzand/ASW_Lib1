@@ -1,15 +1,15 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.User;
 import asw1009.model.entities.UserBase;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * View Model di risposta a richiesta di lista utenti.
+ * Risposta del servizio che restituisce la lista degli utenti.
  *
  * @author ASW1009
  */
-public class UsersListResponseViewModel extends BaseResponseViewModel {
+public class UsersListResponse extends BaseResponse {
     private List<UserBase> users;
     /**
      * Imposta la lista di utenti.

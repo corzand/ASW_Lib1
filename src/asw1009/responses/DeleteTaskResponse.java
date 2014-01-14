@@ -1,13 +1,13 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.Task;
 
 /**
- * View Model di risposta di eliminazione Task.
+ * Risposta del servizio di eliminazione Task.
  *
  * @author ASW1009
  */
-public class DeleteTaskResponseViewModel extends BaseResponseViewModel {
+public class DeleteTaskResponse extends BaseResponse {
 
     private Task task;
 

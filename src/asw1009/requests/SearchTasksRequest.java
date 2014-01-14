@@ -1,13 +1,13 @@
-package asw1009.viewmodel.request;
+package asw1009.requests;
 
 import java.util.Date;
 
 /**
- * View Model di richiesta di ricerca Task.
+ * Richiesta di ricerca Task.
  *
  * @author ASW1009
  */
-public class SearchTasksRequestViewModel {
+public class SearchTasksRequest {
 
     private Date startDate;
     private Date endDate;

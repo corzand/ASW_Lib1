@@ -1,14 +1,14 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.Task;
 import java.util.List;
 
 /**
- * View Model di risposta di Ricerca Task.
+ * Risposta del servizio di Ricerca Task.
  *
  * @author ASW1009
  */
-public class SearchTasksResponseViewModel extends BaseResponseViewModel {
+public class SearchTasksResponse extends BaseResponse {
 
     private List<Task> tasks;
 

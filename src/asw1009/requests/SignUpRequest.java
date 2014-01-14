@@ -1,11 +1,11 @@
-package asw1009.viewmodel.request;
+package asw1009.requests;
 
 /**
- * View Model di richiesta di registrazione utente.
+ * Richiesta di registrazione utente.
  *
  * @author ASW1009
  */
-public class SignUpRequestViewModel {
+public class SignUpRequest {
 
     private String username;
     private String password;

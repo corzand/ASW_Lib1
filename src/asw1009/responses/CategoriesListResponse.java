@@ -1,14 +1,14 @@
-package asw1009.viewmodel.response;
+package asw1009.responses;
 
 import asw1009.model.entities.Category;
 import java.util.List;
 
 /**
- * View Model di risposta elenco categorie.
+ * Risposta del servizio che elenca le categorie.
  *
  * @author ASW1009
  */
-public class CategoriesListResponseViewModel extends BaseResponseViewModel {
+public class CategoriesListResponse extends BaseResponse {
 
     private List<Category> categories;
 

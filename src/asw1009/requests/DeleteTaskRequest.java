@@ -1,11 +1,11 @@
-package asw1009.viewmodel.request;
+package asw1009.requests;
 
 /**
- * View Model di richiesta di eliminazione Task.
+ * Richiesta di eliminazione Task.
  *
  * @author ASW1009
  */
-public class DeleteTaskRequestViewModel {
+public class DeleteTaskRequest {
 
     private int id;
     private long timeStamp;
