@@ -9,7 +9,7 @@ public class LoginRequestViewModel {
 
     private String username;
     private String password;
-    private String remember;
+    private boolean remember;
 
     /**
      * Restituisce lo username dell'utente che richiede l'accesso.
@@ -47,11 +47,20 @@ public class LoginRequestViewModel {
         this.password = password;
     }
 
-    public void setRemember(String remember) {
+    /**
+     * Imposta la scelta dell'utente di ricevere o meno cookie per memorizzare username
+     * e password
+     * @param remember booleano che esprime la scelta dell'utente
+     */
+    public void setRemember(boolean remember) {
         this.remember = remember;
     }
 
-    public String getRemember() {
+    /**
+     * Ritorna la scelta dell'utente di ricevere o meno cookie per memorizzare username e password
+     * @return booleano di scelta
+     */
+    public boolean getRemember() {
         return this.remember;
     }
 }
