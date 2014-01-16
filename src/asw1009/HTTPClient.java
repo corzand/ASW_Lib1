@@ -73,7 +73,7 @@ public class HTTPClient {
 
     public Document execute(String address, Document data) throws TransformerException, ParserConfigurationException, SAXException, IOException, MalformedURLException {
         ManageXML manageXML = new ManageXML();
-
+        
         HttpURLConnection connection = (HttpURLConnection) new URL(base, address).openConnection();
         connection.setRequestMethod("POST");
         connection.setDoOutput(true);
@@ -97,7 +97,6 @@ public class HTTPClient {
         if (setCookie != null && !setCookie.equals("") && (setCookie.substring(0, setCookie.indexOf("=")).equals("JSESSIONID"))) {
             sessionId = setCookie.substring(setCookie.indexOf("=") + 1, setCookie.indexOf(";"));
         }
-        //System.out.println(connection.getHeaderFields());
 
         connection.disconnect();
         return answer;
