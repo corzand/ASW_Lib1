@@ -1,18 +1,40 @@
 package asw1009.requests;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Richiesta di ricerca Task.
  *
  * @author ASW1009
  */
+@XmlRootElement(name="data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class SearchTasksRequest {
 
     private Date startDate;
     private Date endDate;
     private int userId;
 
+    /**
+     * Costruttore di default
+     */
+    public SearchTasksRequest(){
+        
+    }
+    
+    /**
+     * Costruttore utilizzato per ottenere i parametri di ricerca da un oggetto 
+     * polling request che ne wrappa le informazioni fondamentali
+     * @param request Polling request originale
+     */
+    public SearchTasksRequest(PollingRequest request){
+        this.startDate = request.getStartDate();
+        this.endDate = request.getEndDate();
+        this.userId = request.getUserId();
+    }
     /**
      * Restituisce la data di inizio ricerca del task.
      *

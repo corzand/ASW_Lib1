@@ -1,10 +1,16 @@
 package asw1009.requests;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Richiesta di login utente.
  *
  * @author ASW1009
  */
+@XmlRootElement(name="login")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class LoginRequest {
 
     private String username;

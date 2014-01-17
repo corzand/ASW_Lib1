@@ -1,27 +1,88 @@
 package asw1009.model.entities;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Entità rappresentante l'utente.
  *
  * @author ASW1009
  */
-public class User extends UserBase {
+
+@XmlAccessorType(XmlAccessType.FIELD) 
+@XmlRootElement(name="User")
+public class User  {    
     
-    
+    private int id;    
+    private String username;
+    private String picture;
     private String firstName;
     private String lastName;
     private String password;
     private String email;
+    
     
     /**
      * Costruttore di classe.
      */
     public User(){
         super();
+        this.id = 0;
+        this.username = "";
+        this.picture = "";
         this.firstName = "";   
         this.lastName = "";
         this.password ="";
         this.email="";
+    }
+    
+        /**
+     * Restituisce l'identificativo dell'utente.
+     * @return Identificato dell'utente.
+     */
+    public int getId(){
+        return this.id;
+    }
+    
+    /**
+     * Imposta l'identificativo dell'utente.
+     * @param id Identificativo da associare all'utente.
+     */
+    public void setId(int id){
+        this.id = id;
+    }
+    
+    /**
+     * Restituisce l'username dell'utente.
+     * @return Username dell'utente.
+     */
+    public String getUsername(){
+        return this.username;
+    }
+    
+    /**
+     * Imposta l'username dell'utente.
+     * @param username Username da associare all'utente.
+     */
+    public void setUsername(String username){
+        this.username = username;
+    }
+    
+    /**
+     * Restituisce il percorso dell'immagine dell'utente.
+     * @return Percorso dell'immagine associata all'utente.
+     */
+    public String getPicture(){
+        return this.picture;
+    }
+    
+    /**
+     * Imposta il percorso dell'immagine dell'utente.
+     * @param picture Percorso dell'immagine da associare all'utente.
+     */
+    public void setPicture(String picture){
+        this.picture = picture;
     }
     
     /**

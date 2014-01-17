@@ -1,10 +1,16 @@
 package asw1009.requests;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Richiesta di modifica utente.
  *
  * @author ASW1009
  */
+@XmlRootElement(name="data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class EditUserRequest {
 
     private String username;

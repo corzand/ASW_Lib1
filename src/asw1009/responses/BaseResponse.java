@@ -1,12 +1,25 @@
 package asw1009.responses;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Classe base, contiene informazioni comuni ad ogni Response
  *
  * @author ASW1009
  */
+@XmlRootElement(name="data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class BaseResponse {
     private boolean error;
     private String errorMessage;
+
+    public BaseResponse() {
+        this.error = false;
+        this.errorMessage = "";
+    }  
+    
     
     /**
      * Restituisce la presenza di errori.

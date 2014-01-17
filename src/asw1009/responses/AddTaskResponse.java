@@ -1,11 +1,17 @@
 package asw1009.responses;
 
+
 import asw1009.model.entities.Task;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Risposta del servizio di aggiunta Task.
  *
  * @author ASW1009
  */
+@XmlRootElement(name="data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class AddTaskResponse extends BaseResponse {
     private Task task;
     

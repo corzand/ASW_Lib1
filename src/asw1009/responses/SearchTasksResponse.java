@@ -2,12 +2,17 @@ package asw1009.responses;
 
 import asw1009.model.entities.Task;
 import java.util.List;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Risposta del servizio di Ricerca Task.
  *
  * @author ASW1009
  */
+@XmlRootElement(name="data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class SearchTasksResponse extends BaseResponse {
 
     private List<Task> tasks;

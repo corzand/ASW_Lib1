@@ -1,12 +1,18 @@
 package asw1009.model.entities;
 
 import java.util.Date;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Entità rappresentante un singolo task.
  *
  * @author ASW1009
  */
+
+@XmlAccessorType(XmlAccessType.FIELD) 
+@XmlRootElement(name="Task")
 public class Task {
 
     private int id;

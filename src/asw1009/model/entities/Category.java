@@ -1,10 +1,16 @@
 package asw1009.model.entities;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Entità rappresentante una categoria alla quale può essere associato un task.
  *
  * @author ASW1009
  */
+@XmlAccessorType(XmlAccessType.FIELD) 
+@XmlRootElement(name="Category")
 public class Category {
 
     private int id;
